@@ -1,3 +1,5 @@
-FROM fnichol/uhttpd
+FROM nginx:alpine
 
-COPY . /www
+COPY . /usr/share/nginx/html
+
+EXPOSE 80
